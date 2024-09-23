@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Marketing Mastery: Building the Best Pizzeria in London</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        #game-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        #metrics-table th, #metrics-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        #metrics-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #choices button {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        #feedback {
+            margin-bottom: 40px;
+            font-style: italic;
+            background-color: #f9f9f9;
+            padding: 15px;
+        }
+        #question {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h2>Pizza Marketing Mastery</h2> <!-- Subtitle in red -->
+        <h1>Building the Best Pizzeria in London</h1>
+        <p>Make strategic decisions that influence Customer Satisfaction, Revenue, Brand Awareness, and Market Penetration. Keep everything balanced for the best outcome.</p>
+        
+        <table id="metrics-table">
+            <tr>
+                <th>Customer Satisfaction</th>
+                <th>Revenue</th>
+                <th>Brand Awareness</th>
+                <th>Market Penetration</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td id="customerSatisfaction">50</td>
+                <td id="revenue">50</td>
+                <td id="brandAwareness">50</td>
+                <td id="marketPenetration">50</td>
+                <td id="score">0</td>
+            </tr>
+        </table>
+
+        <div id="feedback"></div> <!-- Decision Outcome section -->
+        <div id="question"></div>  <!-- Updated question style -->
+        <div id="choices"></div>
+    </div>
+
+    <script src="scenarios.js"></script>
+    <script src="game_logic.js"></script>
+</body>
+</html>
